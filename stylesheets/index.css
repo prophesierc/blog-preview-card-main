@@ -22,7 +22,14 @@ body{
     border-radius: 10px;
 }
 
+.authorAssets{
+    display:inline-flex;
+}
 
+.author{
+    position: relative;
+    left: 50%;
+}
 
 
 
