@@ -1,25 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+:root{
+    /* Font defaults */
+    @font-face {
+        font-family: Figtree;
+        src: url(https://fonts.google.com/specimen/Figtree);
+    }
+    --ff: 'Figtree', sans-serif;
+
+    --fw-Figtree-n: 500;
+    --fw-Figtree-b: 800;
+
+    --fs-n-body: 16px;
+
+    /* Color defaults */
+    --primary-clr-yellow: hsl(47, 88%, 63%);
+    --neutral-clr-white: hsl(0, 0%, 100%);
+    --neutral-clr-grey: hsl(0, 0%, 50%);
+    --neutral-clr-black: hsl(0, 0%, 7%);
+
+    /* Width defaults */
+    --mobile-width: 375px;
+    --mobile-card-width: 327px;
+    --desktop-width: 1440px;
+    --desktop-card-width: 384px;
+
+    /* Height defaults */
+    --mobile-card-height: 501px;
+    --desktop-card-height: 522px;
+
+    /* Poster image resolutions */
+    --poster-mobile-width: 279px;
+    --poster-desktop-width: 336px;
+    --poster-height: 200px;
+
+    /* border radius */
+    --br: 15px;
+}
 body{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 327px;
-    height: 501px;
-    ;
+    transform: translate(-50%, -50%);    
+    background-color: var(--primary-clr-yellow);
+    text-align: left;
 }
 .card{
-    padding-top: 10%;
-    border: 2px black solid
-}
-
-.content{
-    margin-left: 10%;
-    margin-right: 10%;
+    border: 1px black solid;
+    border-radius: var(--br);
+    background-color: var(--neutral-clr-white);
+    min-width: var(--mobile-card-width);    
+    max-width: var(--desktop-card-width);    
 }
 
 .posterImage{
-    max-width: 100%;
-    border-radius: 10px;
+    border-radius: var(--br);
+    min-width: var(--poster-mobile-width);
+    max-width: var(--poster-desktop-width);
+    height: var(--poster-height);    
+}
+
+.author{
+    display: inline;
 }
 
 
